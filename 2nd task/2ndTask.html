@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+        body {
+            font: 11pt Arial, Helvetica, sans-serif;
+            /* Рубленый шрифт текста */
+            margin: 0;
+            /* Отступы на странице */
+            background: #cbdae8
+        }
+        
+        #header {
+            padding-top: 60px;
+            margin: 0% 0% 0% 50.6%
+        }
+        
+        #sidebar {
+            /* Левая колонка */
+            float: left;
+            /* Обтекание справа */
+            border: 0;
+            /* Параметры рамки вокруг */
+            width: 13.9%;
+            height: 402px;
+            /* Ширина колонки */
+            padding: 0px;
+            /* Поля вокруг текста */
+            margin: 2.87% 0% 0% 11.25%
+        }
+        
+        #content {
+            /* Правая колонка */
+            margin: 0px 19.2% 0px 26.56%;
+            /* Значения отступов */
+            padding-top: 20px;
+            /* Поля вокруг текста */
+            border: 0px;
+            /* Параметры рамки */
+        }
+        
+        #footer {
+            /* Нижний блок */
+            background: #cbdae8;
+            /* Цвет фона */
+            padding: 5px;
+            /* Поля вокруг текста */
+            color: #fff;
+            /* Цвет текста */
+            clear: left;
+            /* Отменяем действие float */
+            margin: 0% 19.2% 0% 11.25%
+        }
+        
+        .menu li {
+            list-style-type: none;
+            border-bottom: 1px solid;
+            border-bottom-color: #abc1cf;
+            padding: 5px;
+        }
+        
+        .menu li a {
+            text-decoration: none;
+            color: black;
+        }
+        
+        .menu li:hover {
+            background-color: #5488af;
+        }
+        
+        .top-menu li a:hover,
+        .down-menu li a:hover {
+            color: #dea0df;
+        }
+        
+        .top-menu,
+        .down-menu {
+            margin: 0;
+            /* Обнуляем значение отступов */
+            padding: 4px;
+            /* Значение полей */
+        }
+        
+        .top-menu li.home a,
+        .down-menu li.home a {
+            color: #dea0df;
+        }
+        
+        .top-menu li a {
+            text-decoration: none;
+            color: black;
+            font-size: 0.9em;
+            font-weight: 600;
+        }
+        
+        .down-menu li a {
+            text-decoration: none;
+            color: black;
+            font-size: 0.8em;
+            font-weight: 600;
+        }
+        
+        .top-menu li,
+        .down-menu li {
+            display: inline;
+            /* Отображать как строчный элемент */
+            margin-right: 5px;
+            /* Отступ слева */
+            /* Рамка вокруг текста */
+            padding: 0px;
+            /* Поля вокруг текста */
+        }
+        
+        .main-table {
+            text-align: center;
+            border: 1px solid #0360A3;
+            border-style: solid;
+        }
+        
+        .main-table thead {
+            background: #5EA1D1;
+        }
+        
+        .bold {
+            font-weight: bold;
+        }
+        
+        .list {
+            list-style-type: disc;
+        }
+        
+        .non-circle-li {
+            list-style-type: none;
+        }
+        
+        .red {
+            color: #FF0000;
+            font-style: italic;
+        }
+        
+        .green {
+            color: #008000;
+            font-style: italic;
+        }
+        
+        .blue {
+            color: #0000FF;
+            font-style: italic;
+            text-decoration: underline;
+        }
+        
+        .yellow {
+            color: #FFD700;
+        }
+        
+        .purple {
+            color: #800080;
+            text-decoration: underline;
+        }
+        
+        .grey {
+            color: #828080;
+            font-style: italic;
+        }
+        
+        .image {
+            padding: 0px;
+            margin: 0px;
+        }
+        
+        .menu {
+            /* убираем маркеры списка */
+            padding: 0;
+            /* убираем отступы у Ul и LI */
+            margin: 0;
+            /* убираем поля */
+        }
+        
+        .copyright {
+            padding: 0px;
+            float: right;
+            padding-right: 0px;
+            color: black;
+        }
+        
+        .down-menu li:before {
+            color: black;
+            content: "| ";
+            /* Добавляем желаемый символ перед элементом списка */
+        }
+        
+        .down-menu li:first-of-type:before {
+            content: "";
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        p a {
+            color: #DEA0DE;
+            font-style: normal;
+        }
+        
+        p a[href ^="microsoft"] {
+            font-weight: bold;
+        }
+        
+        .menu a {
+            display: block;
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="sidebar">
+        <p class="image"><img src="C:\Users\rnoctezuma\Desktop\Web\2nd task\image.jpg" width="190" height="65"></p>
+        <ul class="menu">
+            <li><a href="">Home</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Solutions</a></li>
+            <li><a href="">Support</a></li>
+            <li><a href="">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <div id="header">
+        <ul class="top-menu">
+            <li class="home"><a href="">Home</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Solutions</a></li>
+            <li><a href="">Support</a></li>
+            <li><a href="">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <div id="content">
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.<br> Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,<br> ultricies nec, pellentesque
+            eu, pretium quis, sem. Nulla consequat massa quis enim.
+        </p>
+        <table class="main-table" width="100%" border="1" cellpadding="3" cellspacing="0" align="top">
+            <thead>
+                <tr>
+                    <th rowspan="2">id</th>
+                    <th rowspan="2">Name</th>
+                    <th colspan="2">Price</th>
+                </tr>
+                <tr>
+                    <th>NET</th>
+                    <th>GROSS</th>
+                </tr>
+            </thead>
+            <tr>
+
+                <td>1</td>
+                <td>The quick, brown fox jumps over a lazy dog</td>
+                <td>12</td>
+                <td>13</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>The quick, brown fox jumps over a lazy dog</td>
+                <td>156</td>
+                <td>267</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>The quick, brown fox jumps over a lazy dog</td>
+                <td>34</td>
+                <td>98</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>The quick, brown fox jumps over a lazy dog</td>
+                <td>1346</td>
+                <td>1098</td>
+            </tr>
+        </table>
+
+        <p>В середине 1990-х годов основные производители браузеров &mdash; компании <a href="">Netscape</a> и <a href="microsoft.com">Microsoft</a></p>
+
+        <ul class="list">
+            <li class="red">Chrome</li>
+            <li class="green">Firefox</li>
+            <li class="red">Internet Explorer</li>
+            <li class="non-circle-li">
+                <ul>
+                    <li class="blue">IE 8</li>
+                    <li class="purple">IE 10</li>
+                    <li class="yellow">Edge</li>
+                </ul>
+            </li>
+
+            <li class="grey">.. другие</li>
+        </ul>
+
+
+    </div>
+    <div id="footer">
+        <p class="copyright">Copyright &copy; All right reserved</p>
+        <ul class="down-menu">
+            <li class="home"><a href="">Home</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Solutions</a></li>
+            <li><a href="">Support</a></li>
+            <li><a href="">Contact Us</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>
